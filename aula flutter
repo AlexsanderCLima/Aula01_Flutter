@@ -4,12 +4,36 @@ void main(){
   
   runApp(MaterialApp(
     
-    title:"Estrutura Principal Flutter",
-    home:Row(children: <Widget>[
-      //Text('Gustavin do Grau'),
-      //Text('Sexto Capetaiada')
-    ],),
-  
-  ));
- 
-}
+    
+     //debugShowCheckModeBanner: false;
+    title:'Estrutura Principal Flutter',
+    home:Container(
+      color: Colors.black,
+      //padding: EdgeInsets.fromLTRB(100,100,100,100),
+      //margin: EdgeInsets.all(100)
+      child:Column(children: <Widget> [
+        
+        Padding(
+        padding: EdgeInsets.fromLTRB(0,0,0,0),
+          child: Text("texto1"),
+        
+        ),
+        
+        
+        Padding(
+        padding:EdgeInsets.fromLTRB(5,4,3,2),
+        child:Text("texto2"),
+          
+         ),
+          
+        Padding(
+        padding: EdgeInsets.fromLTRB(0,0,0,0),
+        child: Text("texto1"),    
+          
+        ),
+        
+        
+     ] ))         
+  ));                 
+                   
+}                   
