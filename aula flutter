@@ -41,8 +41,6 @@ void main(){
 
 
 
-////////ESTRUTURA BASICA DE UM PROJETO FLUTTER, AULA 07///////
-
 //ESTRUTURA BASICA DE UM PROJETO FLUTTER
 
 import 'package:flutter/material.dart';
@@ -57,11 +55,30 @@ void main(){
      appBar:AppBar(
      title:Text("Instagram"),
      backgroundColor:Colors.purpleAccent,
-     )
-    )
+     ),
+      body:Padding(
+         padding:EdgeInsets.all(16),
+        child:Text("Conteúdo Principal"),
+        ),
+      
+      bottomNavigationBar: BottomAppBar(
+        color:Colors.cyan,
+        child:Padding(
+         padding:EdgeInsets.all(16),
+          child: Row(
+           children: <Widget> [
+             Text('Texto1'),
+             Text('Texto2')
+             
+           ]
+          )
+        )
+        
+      )
+      
+      )
+    ),
   
-  ));
+  );
   
 }
-
-////////////////////////////////////////////////////////////
