@@ -97,11 +97,17 @@ void main(){
   
   title:"Trabalhando com imagens",
   home: Container(
-    margin: EdgeInsets.only ( top:40 ),
+    margin: EdgeInsets.only ( top:100 ),
     decoration: BoxDecoration(
-     border:Border.all(width: 3, color: Colors.white)
+     border:Border.all(width: 3, color: Colors.lightBlue)
+    ),
+    child:Image.asset(
+    "images:mesa.jpg",
+      fit:BoxFit.scaleDown,
+    
     )
-  )
+    
+  ),
   
   
   ));
