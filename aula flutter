@@ -37,3 +37,31 @@ void main(){
   ));                 
                    
 }                   
+
+
+
+
+////////ESTRUTURA BASICA DE UM PROJETO FLUTTER, AULA 07///////
+
+//ESTRUTURA BASICA DE UM PROJETO FLUTTER
+
+import 'package:flutter/material.dart';
+
+void main(){
+  
+  runApp(MaterialApp(
+  
+  
+  debugShowCheckedModeBanner:true,
+    home:Scaffold(
+     appBar:AppBar(
+     title:Text("Instagram"),
+     backgroundColor:Colors.purpleAccent,
+     )
+    )
+  
+  ));
+  
+}
+
+////////////////////////////////////////////////////////////
